@@ -1,0 +1,8 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+    opacity: .5;
+    filter: blur(.3)
+}
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <script>
+    function numCheck() {
+        var n= document.getElementById("num").value;
+        if(n>96 && n<150)
+            document.getElementById("para").innerHTML="Number is valid";
+        else
+            document.getElementById("para").innerHTML="Number is not valid";
+    }
+    </script>
+</head>
+<link rel="stylesheet" href="C:\Web Dev\bootstrap-4.0.0-dist\css\bootstrap.css">
+<body>
+    <div>
+        
+            <label>Enter a number</label>
+            <input type="text" id="num" class="form-control" placeholder="Number">
+            <button onclick="numCheck()">Check</button>
+            <h1 id="para">Hello</h1>
+ </div>
+</body>
+</html>
