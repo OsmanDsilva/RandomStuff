@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Shopping Cart</title>
+
+<style>
+body{white-space:pre;}
+
+</style>
+</head>
+<body>
+<center><h1>Shopping Cart</h1></center><hr>
+
+<div>
+<img src="images/item1.jpg" height=75 width=100>Item 1[Rs.500] 			<button onclick=dec(document.getElementById('Item1'))>-</button><input value=0 id='Item1' type="text" autocomplete="off"><button onclick=inc(document.getElementById('Item1'))>+</button></div>
+<div>
+<img src="images/item2.jpg" height=75 width=100>Item 2[Rs.700] 			<button onclick=dec(document.getElementById('Item2'))>-</button><input value=0 id='Item2' type="text" autocomplete="off"><button onclick=inc(document.getElementById('Item2'))>+</button></div>
+<div>
+<img src="images/item3.jpg" height=75 width=100>Item 3[Rs.100]			<button onclick=dec(document.getElementById('Item3'))>-</button><input value=0 id='Item3' type="text" autocomplete="off"><button onclick=inc(document.getElementById('Item3'))>+</button></div>
+<div>
+<img src="images/item4.jpg" height=75 width=100>Item 4[Rs.250]			<button onclick=dec(document.getElementById('Item4'))>-</button><input value=0 id='Item4' type="text" autocomplete="off"><button onclick=inc(document.getElementById('Item4'))>+</button></div>
+<div>
+<img src="images/item5.jpg" height=75 width=100>Item 5[Rs.400]			<button onclick=dec(document.getElementById('Item5'))>-</button><input value=0 id='Item5' type="text" autocomplete="off"><button onclick=inc(document.getElementById('Item5'))>+</button></div>
+
+
+<button onclick="finalize()">Confirm</button>
+
+
+
+
+
+
+<script type="text/javascript">
+var price=[500,700,100,250,400];
+var finarr=[0,0,0,0,0];
+var fina=0;
+
+function finalize(){
+var arr=document.getElementsByTagName('input');
+for(var i=0;i<5;i++){
+finarr[i]=price[i]*arr[i].value;
+fina=fina+finarr[i];
+}
+document.getElementById('final1').innerHTML=fina;
+invo();
+}
+
+function inc(elem){
+
+
+	elem.value++;
+
+}
+function dec(elem){
+
+	if(elem.value==0){
+			alert("Value cannot be less than zero");
+			return;
+			}
+	elem.value--;
+	
+	
+}
+function invo(){
+var msg="";
+var arr=document.getElementsByTagName('input');
+
+for(var i=0;i<5;i++){
+	if(arr[i].value>0)
+		msg=msg+arr[i].id+":		"+finarr[i]+"\n"
+	}
+	msg=msg+"---------------------------\n"+"Final:		"+fina;
+
+alert(msg);
+finarr=[0,0,0,0,0];
+fina=0;
+}
+</script>
+
+</body>
+</html>

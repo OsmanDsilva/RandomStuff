@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>LAB program 1A</title>
+	<link rel="stylesheet" href="prg1.css" type="text/css">
+</head>
+<body bgcolor="lightblue"><center>
+<h1>Welcome to Web Programming Laboratory</h1>
+</center>
+<h4 style=text-align:right>Osman Dsilva 1DS16CS074</h4>
+<caption><b>Fruits and Vegetables</b></caption>
+<ol>
+	<li>Fruits
+		<ol>
+			<li>Apple</li>
+			<li>Banana</li>
+			<li>Orange</li>
+		</ol>
+	</li>
+	<li>Vegetables
+		<ol>
+			<li>Tomato</li>
+			<li>Carrot</li>
+			<li>Onion</li>
+		</ol>
+	</li>
+</ol>
+<table border="2">
+	<tr>
+		<th class="color1">SUBJECT</th>
+		<th class="color1">FACULTY</th>
+	</tr>
+	<tr>
+		<td>JAVA programming</td>
+		<td>Praveen Kumar</td>
+	</tr>
+	<tr>
+		<td>Computer Network</td>
+		<td>MS Patel</td>
+	</tr>
+	<tr>
+		<td>UNIX</td>
+		<td>Harish</td>
+	</tr>
+</table>
+<p>Sure you will get a lot of <span class="demo">FUN</span> in the Web programming lab</p>
+<p class="one">In the lab we will learn XHTML,CSS,JS,PHP</p>
+<p class="two">XHTML,CSS,JS are used as client side programming</p>
+<p class="three">Perl and PHP are used as server side programming</p>
+</body>
+</html>

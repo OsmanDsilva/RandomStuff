@@ -1,0 +1,37 @@
+<html>
+<head>
+<script type="text/javascript">
+	function validateFields(elem1,elem2){
+		var alphaExp=/^[1-4][a-zA-Z][a-zA-Z][0-9][0-9][a-zA-Z][a-zA-Z][0-9][0-9][0-9]$/;
+		var semes=/^[1-8]$/;
+	
+		if(!elem1.value.match(alphaExp)&&!elem2.value.match(semes)){
+			alert("Invalid USN\nInvalid sem");
+			return false;
+		}
+		else if(!elem1.value.match(alphaExp)&&elem2.value.match(semes)){
+			alert("Invalid USN\nValid sem");
+			return false;
+		}
+		else if(elem1.value.match(alphaExp)&&!elem2.value.match(semes)){
+			alert("Valid USN\nInvalid sem");
+			return false;
+		}
+		else{
+			alert("Valid USN\nValid sem");
+			return true;
+		}
+	}
+</script>
+</head>
+<body>
+		<form>
+		<label>Enter the USN:<input type="text" id="usn" /></label><br /><br />
+		<label>Enter the Semester:<input type="text" id="sem" /></label><br /><br />
+		<input type="submit" onclick="validateFields(document.getElementById('usn'),document.getElementById('sem'))" value="Checkfield" />
+	</from>
+	</body>
+</html>
+		
+		
+		

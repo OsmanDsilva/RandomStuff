@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href='stud.xsl' type='text/xsl'?>
+<vtu>
+	<student>
+		<name>ABC</name>
+		<usn>1ds07is01</usn>
+		<branch>info science</branch>		
+		<college>Dayanand Sagar</college>
+	</student>
+	<student>
+		<name>DEF</name>
+		<usn>1ds06is045</usn>
+		<branch>info science</branch>		
+		<college>Dayanand Sagar</college>
+	</student>
+	<student>
+		<name>GHI</name>
+		<usn>1ds05is067</usn>
+		<branch>comp science</branch>		
+		<college>Dayanand Sagar</college>
+	</student>
+</vtu>

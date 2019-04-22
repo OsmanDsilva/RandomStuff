@@ -1,0 +1,33 @@
+<html>
+<head>
+	<script type="text/javascript">
+	function calculation(){
+		var x=prompt("Enter the value to fibonacci");
+		x=parseInt(x);
+		var y1=0,i,y2=1,res;
+		if(x<0||x==0)
+		{
+			document.write("Series is not possible");
+		}
+		if(x==1)
+		{
+			document.write(y1);
+		}
+		if(x>1)
+		{
+			document.write(y1,"&nbsp &nbsp",y2);
+		}
+		for(i=2;i<x;i++)
+		{
+			res=y1+y2;
+			y1=y2;
+			y2=res;
+			document.write("&nbsp &nbsp",res);
+		}
+		document.write("<center>OSMAN DSILVA</center>");
+		document.write("<center>1DS16CS074</center>");
+	}
+	</script>
+	<body onload="calculation()" bgcolor="lightblue">
+	<h4 style="text-align:right">OSMAN DSILVA 1DS16CS074</h4></body>
+</html>
