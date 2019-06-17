@@ -1,3 +1,4 @@
+
 <?php
 	$inTwomnts=60*60*24*60 +Time();
 	setcookie('lastvisit',date("h:i:s A-m/d/y"),$inTwomnts);

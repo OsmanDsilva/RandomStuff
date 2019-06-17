@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Hello</title>
+        <style type="text/css">
+        h1{
+            color: white;
+            text-align: center;
+            font: bold 25px Georgia,serif;
+            margin: 0.1in;
+        }
+        h2.head{
+            color: white;
+            text-align: center;
+            font: bold 15px Georgia,serif;
+            margin: 0.1in;
+        }
+        h4{
+            color: white;
+            text-align: center;
+            font: bold 17px Georgia,serif;
+            margin: 0.1in;
+        }
+        .button{
+            padding: 20px;
+            color:red;
+            text-decoration: none;
+            border: 2px solid red;
+            border-radius: 25px;
+            background-color: blue;
+            transition: 0.3s;
+        }
+        .button:hover{
+            background-color: green;
+        }
+        .overlay{
+            position: fixed;
+            top: 0;right: 0;bottom: 0;left: 0;
+            visibility: hidden;
+            opacity: 0;
+            background: rgb(0, 0, 0,0.7);
+            transition: 500ms;
+        }
+        .overlay:target{
+            visibility: visible;
+            opacity: 1;
+        }
+        .popup{
+            padding:20px;
+            position: relative;
+            background-color: white;
+            width: 30%;
+            margin: 200px auto;
+            border-radius: 20px;
+            transition: all 5s ease-in-out;
+        }
+        .popup h2{
+            text-align: center;
+            color: blue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+         }
+         .popup .close{
+             position: absolute;
+             top: 15px;
+             left: 400px;
+             transition: all 200ms;
+             text-decoration: none;
+             color: black;
+             font-size: 25px;
+         }
+         .popup .close:hover{
+             color:red;
+         }
+         .popup .content{
+             overflow: auto;
+             max-height: 30%;
+         }
+        </style>
+    </head>
+    <body bgcolor='black'>
+        <br /><br /><br />
+        <h1>DSCE</h1>
+        <h2 class='head'>CSE</h2>
+        <h4>1b demo</h4>
+        <br><br><br>
+        <center><a href="#popup1" class='button'>CLICK</a></center>
+        <form action=''>
+            <div id=popup1 class=overlay>
+                <div class=popup>
+                    <h2>Text Editor</h2>
+                    <a href="#" class="close">&times;</a>
+                    <div class="content">
+                        <textarea cols="30" rows="10"></textarea>
+                        <input type="reset" value="Clear">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

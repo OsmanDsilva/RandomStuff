@@ -26,17 +26,29 @@ body{white-space:pre;}
 
 <script type="text/javascript">
 var price=[500,700,100,250,400];
-var finarr=[0,0,0,0,0];
-var fina=0;
+ 
 
 function finalize(){
+	var finarr=[0,0,0,0,0];
+ var fina=0;
 var arr=document.getElementsByTagName('input');
 for(var i=0;i<5;i++){
 finarr[i]=price[i]*arr[i].value;
 fina=fina+finarr[i];
 }
 
-invo();
+var msg="";
+
+
+for(var i=0;i<5;i++){
+	if(arr[i].value>0)
+		msg=msg+arr[i].id+":		"+finarr[i]+"\n"
+	}
+	msg=msg+"---------------------------\n"+"Final:		"+fina;
+
+alert(msg);
+//  finarr=[0,0,0,0,0];
+//  fina=0;
 }
 
 function inc(elem){
@@ -55,20 +67,20 @@ function dec(elem){
 	
 	
 }
-function invo(){
-var msg="";
-var arr=document.getElementsByTagName('input');
+// function invo(){
+// var msg="";
+// var arr=document.getElementsByTagName('input');
 
-for(var i=0;i<5;i++){
-	if(arr[i].value>0)
-		msg=msg+arr[i].id+":		"+finarr[i]+"\n"
-	}
-	msg=msg+"---------------------------\n"+"Final:		"+fina;
+// for(var i=0;i<5;i++){
+// 	if(arr[i].value>0)
+// 		msg=msg+arr[i].id+":		"+finarr[i]+"\n"
+// 	}
+// 	msg=msg+"---------------------------\n"+"Final:		"+fina;
 
-alert(msg);
-finarr=[0,0,0,0,0];
-fina=0;
-}
+// alert(msg);
+//  finarr=[0,0,0,0,0];
+//  fina=0;
+// }
 </script>
 
 </body>
